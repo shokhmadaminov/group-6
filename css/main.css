@@ -21,6 +21,9 @@ body {
     line-height: 1.5;
     color: #666;
     background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
 }
 .container {
     width: 100%;
@@ -52,6 +55,7 @@ h1 {
     font-weight: 400;
     font-size: 36px;
     line-height: 42px;
+    text-transform: uppercase;
     color: #000;
 }
 .card-title {
@@ -68,6 +72,18 @@ h1 {
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #999999;
+    margin-bottom: 18px;
+}
+.author {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    color: #000;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.author span:first-child {
+    margin-right: 5px;
 }
 p {
     font-family: 'Source Serif Pro', serif;
@@ -131,4 +147,40 @@ p {
 .sitenav-link:hover::before {
     width: 100%;
     visibility: hidden;
+}
+
+
+/* MAIN STYLES */
+.main {
+    flex-grow: 1;
+}
+
+/* INTRO STYLES */
+.intro {
+    padding: 60px 0px;
+    display: flex;
+    gap: 50px;
+}
+.intro-img-wrapper {
+    width: 721px;
+    overflow: hidden;
+}
+.intro-img-wrapper:hover img {
+    transform: scale(1.1);
+}
+.intro-img {
+    display: block;
+    transition: transform 0.5s ease;
+}
+.intro-content {
+    width: 100%;
+    max-width: 430px;
+}
+.intro h1 {
+    margin-bottom: 27px;
+}
+.intro-text {
+    width: 100%;
+    max-width: 419px;
+    margin-bottom: 28px;
 }
