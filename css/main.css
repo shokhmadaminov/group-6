@@ -221,3 +221,101 @@ p {
 .cards-bottom .grid-list {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
+
+/* FOOTER SECTION */
+.footer {
+    padding: 90px 0px;
+    background-color: #141414;
+}
+.footer-top {
+    display: flex;
+    align-items: flex-end;
+}
+.footer-logo {
+    display: flex;
+    margin-right: 15px;
+}
+.footer-logo:hover svg path {
+    fill: #666;
+}
+.footer-logo:active svg path {
+    opacity: 0.6;
+}
+.footer-top .card-subtitle {
+    margin-bottom: 0;
+    color: #666;
+    line-height: 1;
+}
+.footer-line {
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: #4d4d4d;
+    margin: 60px 0px;
+}
+.footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-one {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.footer-one div {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-bottom-list {
+    flex-grow: 1;
+}
+.footer-bottom-list:not(:last-child) {
+    padding-right: 15px;
+}
+.footer-bottom-item:not(:last-child) {
+    margin-bottom: 15px;
+}
+.footer-bottom-link {
+    color: #fff;
+}
+.footer-bottom form {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-bottom form div {
+    width: 100%;
+    display: flex;
+}
+.footer-bottom input {
+    /* width: calc(100% - 77px); */
+    font-size: 12px;
+    color: #999;
+    padding: 18px 24px;
+    background-color: #fff;
+    flex-grow: 1;
+}
+.footer-bottom input::placeholder {
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    color: #666;
+    text-transform: uppercase;
+}
+.footer-bottom button {
+    background-color: #000;
+    color: #fff;
+    padding: 18px 24px;
+}
+.footer-two {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-two div {
+    display: flex;
+}
